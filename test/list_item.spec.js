@@ -7,13 +7,14 @@ import {
 } from 'enzyme';
 
 describe('<ListItem />',  () => {
-	const props = {
-		image: 'http://www.menucool.com/slider/jsImgSlider/images/image-slider-2.jpg',
-		description: 'imagine and image',
-		active: true
+	
+const props = {
+	image: 'http://www.menucool.com/slider/jsImgSlider/images/image-slider-2.jpg',
+	description: 'imagine and image',
+	active: true
 	}
 
-	const wrapper = mount(<ListItem image={props.image} description={props.description} />)
+const wrapper = mount(<ListItem image={props.image} description={props.description} />)
 
 	it('displays a thumbnail', () => {
 		const image = wrapper.find('img')
@@ -23,16 +24,16 @@ describe('<ListItem />',  () => {
 
   it('contains an active class if active', () => {
   	const wrapper = mount(<ListItem />)
-  	expect(wrapper.find).to.be.present()
+  	expect(wrapper.find('ListItem')).to.be.present()
   });
 
   it('renders a description', () => {
-      const description = wrapper.find('description')
-      expect(description.length).to.equal(1)
+    const description = wrapper.find('description')
+    expect(description.length).to.equal(1)
   });
 
   it('calls clickhandler on click', () => {
   	const wrapper = mount(<ListItem />)
-  	expect(wrapper.find).to.be.selected()
+  	expect(wrapper.find('ListItem')).to.be.selected()
   });
 });

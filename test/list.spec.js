@@ -6,24 +6,9 @@ import {
 } from 'enzyme';
 
 describe('<List />',  () => {
-	const props = {
-		
-	}
-	const wrapper = mount
 
-	it('', () => {
-      
-  });
-
-  it('', () => {
-      
-  });
-
-  it('', () => {
-      
-  });
-
-  it('', () => {
-      
+	it('displays 5 list items', () => {
+    const wrapper = mount(<List />)
+    expect(wrapper.find('ListItem')).to.equal(5)
   });
 });
