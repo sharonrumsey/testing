@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 
-class CommentList extends Component {
+class ListItem extends Component {
   render() {
     return (
       <ul>
@@ -12,4 +12,4 @@ class CommentList extends Component {
   }
 }
 
-export default CommentList;
+export default ListItem;

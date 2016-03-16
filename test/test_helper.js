@@ -1,5 +1,3 @@
-import { expect } from 'chai';
-import sinon from 'sinon';
-
-global.expect = expect;
-global.sinon = sinon;
+global.document = require('jsdom').jsdom('<body></body>')
+global.window = document.defaultView
+global.navigator = window.navigator

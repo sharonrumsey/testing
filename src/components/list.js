@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 
 
-class CommentList extends Component {
+class List extends Component {
   render() {
+    alert('hello')
     return (
       <ul>
         <li> Comment One </li>
@@ -12,4 +13,4 @@ class CommentList extends Component {
   }
 }
 
-export default CommentList;
+export default List;
