@@ -16,22 +16,23 @@ describe('<ListItem />',  () => {
 	const wrapper = mount(<ListItem image={props.image} description={props.description} />)
 
 	it('displays a thumbnail', () => {
-
 		const image = wrapper.find('img')
-
     expect(image.length).to.equal(1)
     expect(image.prop('href')).to.be(props.image)
   });
 
   it('contains an active class if active', () => {
-      
+  	const wrapper = mount(<ListItem />)
+  	expect(wrapper.find).to.be.present()
   });
 
   it('renders a description', () => {
-      
+      const description = wrapper.find('description')
+      expect(description.length).to.equal(1)
   });
 
   it('calls clickhandler on click', () => {
-      
+  	const wrapper = mount(<ListItem />)
+  	expect(wrapper.find).to.be.selected()
   });
 });

@@ -1,32 +1,29 @@
-// import React from 'react';
-// import ActiveView from '../../src/components/list';
-// import {
-//   describeWithDOM,
-//   mount,
-//   shallow,
-//   spyLifecycle
-// } from 'enzyme';
+import React from 'react';
+import ActiveView from '../src/components/list';
+import {
+  mount,
+  shallow,
+} from 'enzyme';
 
-// describe('<List />',  () => {
-// 	const props = {
-// 		image: 'http://www.menucool.com/slider/jsImgSlider/images/image-slider-2.jpg',
-// 		description: 'imagine and image'
-// 	}
-// 	const wrapper = mount
+describe('<List />',  () => {
+	const props = {
+		
+	}
+	const wrapper = mount
 
-// 	it('displays a thumbnail', () => {
+	it('', () => {
       
-//   });
+  });
 
-//   it('contains an active class if active', () => {
+  it('', () => {
       
-//   });
+  });
 
-//   it('renders a description', () => {
+  it('', () => {
       
-//   });
+  });
 
-//   it('calls clickhandler on click', () => {
+  it('', () => {
       
-//   });
-// });
+  });
+});
