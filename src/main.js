@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import Root from './containers/Root';
 
-class Root extends Component {
-	render() {
-		return <h1>Hello Again</h1>;
-	}
-}
+
 
 render(<Root />, document.getElementById('root'));
+
